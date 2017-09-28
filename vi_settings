@@ -1,0 +1,16 @@
+There are many VIM short cuts
+To set the swap file in to a back up directory.
+In .vimrc dir set these lines
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
+set spell
+syntax on
+colorscheme delek
+
+create a .vim/backup and .vim/tmp dirs
+create a .vim/colors
+To get more colors in to vim
+create .vim/colors dir
+clone all the colors from git
+git clone https://github.com/flazz/vim-colorschemes.git
