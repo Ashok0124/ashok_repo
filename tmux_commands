@@ -1,0 +1,17 @@
+The command to used to create a new session with tmux:
+tmux #It will assign the session number dynamically
+tmux new -s oracle # creates a session with name oracle
+The command to dettach a session
+ctrl+B d
+The command to list tmux sessions
+tmux ls
+The command to attach to a session
+tmux attach -t 0 # 0 is the session number
+The command to kill a session
+tmux kill-session -t 0
+The command to split the current pan into two panes
+ctrl+B %
+The command to split the pan vertically
+ctrl+B "
+The command to move between the panes
+ctrl+B <up arrow>
