@@ -52,6 +52,13 @@ esac
 
 # User specific aliases and functions
 
-export HISTFILESIZE=100000
-export HISTTIMEFORMAT="%h%d - %H:%M:%S"
+export HISTTIMEFORMAT="%h%d - %H:%M:%S "
+export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
+export HISTSIZE=100000                   # big big history
+export HISTFILESIZE=100000               # big big history
+shopt -s histappend
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 alias unset_proxy="unset http_proxy && unset https_proxy && unset no_proxy"
